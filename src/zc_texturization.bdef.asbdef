@@ -1,0 +1,13 @@
+projection implementation in class ZBP_C_TEXTURIZATION unique;
+strict ( 2 );
+
+define behavior for ZC_TEXTURIZATION alias ZcTexturization
+use etag
+{
+
+    use action deletebyTransId;
+//  use create;
+//  use update;
+//  use delete;
+
+}

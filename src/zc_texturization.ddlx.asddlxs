@@ -1,0 +1,250 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Productionorder'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Orderdate'
+@UI.headerInfo: {
+typeName: 'Count',
+typeNamePlural: 'Count'
+}
+annotate view ZC_TEXTURIZATION with
+{
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [{
+    position: 10 , 
+      label: 'Delete by Transaction Id',
+      type: #FOR_ACTION,
+      dataAction: 'deletebyTransId',
+      invocationGrouping: #CHANGE_SET,
+    importance: #HIGH
+  }, {
+    position: 10 
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  Productionorder;
+  
+  @EndUserText.label: 'Order Date'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Order Date'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Order Date'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Orderdate;
+  
+    
+  @EndUserText.label: 'Transaction Id'
+  @UI.identification: [ {
+    position: 21 , 
+    label: 'Transaction Id'
+  } ]
+  @UI.lineItem: [ {
+    position: 21 , 
+    label: 'Transaction Id'
+  } ]
+  Transid;
+  
+  
+  @EndUserText.label: 'Shift'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Shift'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Shift'
+  } ]
+  
+  Shift;
+  
+  @EndUserText.label: 'Type'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Type'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Type'
+  } ]
+    Type;
+  
+  @EndUserText.label: 'Sno'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Sno'
+  } ]
+  Sno;
+  
+  @EndUserText.label: 'Tool Id'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Toolid'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Toolid'
+  } ]
+  Toolid;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  Material;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  Materialdescription;
+  
+  @EndUserText.label: 'UOM'
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'UOM'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'UOM'
+  } ]
+  UOM;
+  
+  @EndUserText.label: 'Quantity'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'Quantity'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'Quantity'
+  } ]
+  Quantity;
+  
+  
+  @EndUserText.label: 'Batch'
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'Batch'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'Batch'
+  } ]
+  Batch;
+  
+  @EndUserText.label: 'Storage Location'
+  @UI.identification: [ {
+    position: 121 , 
+    label: 'Storage Location'
+  } ]
+  @UI.lineItem: [ {
+    position: 121 , 
+    label: 'Storage Location'
+  } ]
+  Storagelocation;
+  
+    @EndUserText.label: 'To Location'
+  @UI.identification: [ {
+    position: 122 , 
+    label: 'To Location'
+  } ]
+  @UI.lineItem: [ {
+    position: 122 , 
+    label: 'To Location'
+  } ]
+  Tolocation;
+  
+  @EndUserText.label: 'Error'
+  @UI.identification: [ {
+    position: 130 , 
+    label: 'Errorlog'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 , 
+    label: 'Errorlog'
+  } ]
+  Errorlog;
+  
+  @EndUserText.label: 'Posted'
+  @UI.identification: [ {
+    position: 140 , 
+    label: 'Posted'
+  } ]
+  @UI.lineItem: [ {
+    position: 140 , 
+    label: 'Posted'
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  Posted;
+  
+  @EndUserText.label: 'Document'
+  @UI.identification: [ {
+    position: 150 , 
+    label: 'Document'
+  } ]
+  @UI.lineItem: [ {
+    position: 150 , 
+    label: 'Document'
+  } ]
+  Document;
+  
+  @EndUserText.label: 'Send To MES'
+  @UI.identification: [ {
+    position: 180 , 
+    label: 'Send To MES'
+  } ]
+  @UI.lineItem: [ {
+    position: 180 , 
+    label: 'Send To MES'
+  } ]
+  Sendtomes;
+  
+  @UI.identification: [ {
+    position: 160 
+  } ]
+  @UI.lineItem: [ {
+    position: 160 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 170 
+  } ]
+  @UI.lineItem: [ {
+    position: 170 
+  } ]
+  
+  CreatedAt;
+  
+  @UI.hidden: true
+  LastChangedBy;
+  
+
+  @UI.hidden: true
+  LastChangedAt;
+  
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

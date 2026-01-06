@@ -1,0 +1,62 @@
+managed implementation in class ZBP_R_TRANSFERJOURNAL unique;
+strict ( 2 );
+
+define behavior for ZR_TRANSFERJOURNAL alias ZrTransferjournal
+persistent table ZTRANSFERJOURNAL
+
+
+etag master LastChangedAt
+lock master
+authorization master( global )
+{
+//  field ( mandatory : create )
+//   MaterialID,
+//   HeaderID;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   Material,
+   Plant,
+   Sno,
+   HeaderID;
+
+
+  create;
+  update;
+  delete;
+
+  action ClearErrorlog;
+
+
+  mapping for ZTRANSFERJOURNAL
+  {
+    HeaderID = header_id;
+    Material = material;
+    Plant = plant;
+    Sno = sno;
+    FromLocation = from_location;
+    ToLocation = to_location;
+    FromBatch = from_batch;
+    ToBatch = to_batch;
+    SendToMES = sendtomes;
+    Quantity = quantity;
+    EntryUnit = entry_unit;
+    Errorlog = errorlog;
+    Posted = posted;
+    PostingUOM = posting_uom;
+    DocumentNumber = document_number;
+    DocumentYear = document_year;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+
+}

@@ -1,0 +1,12 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_TEXTURIZATION'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_TEXTURIZATION'
+  }
+}
+define service ZUI_TEXTURIZATION_O4
+  provider contracts odata_v4_ui {
+  expose ZC_TEXTURIZATION as Texturization;
+}

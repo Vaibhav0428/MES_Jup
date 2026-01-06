@@ -1,0 +1,13 @@
+projection implementation in class ZBP_C_TRANSFERJOURNAL unique;
+strict ( 2 );
+define behavior for ZC_TRANSFERJOURNAL alias ZcTransferjournal
+
+use etag
+{
+//  use create;
+//  use update;
+//  use delete;
+
+    use action ClearErrorlog;
+
+}

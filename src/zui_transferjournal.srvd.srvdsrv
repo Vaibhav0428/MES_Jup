@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_TRANSFERJOURNAL'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_TRANSFERJOURNAL'
+  }
+}
+define service ZUI_TRANSFERJOURNAL {
+  expose ZC_TRANSFERJOURNAL as TransferJournal;
+}

@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "HOTO Transfer Journal"
+  },
+  "ui5AppDetails": {
+    "appId": "ztransferjournal"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_544FE317E38622D6C0063A43BF4B1687A2E404C0_TM",
+    "semanticObject": "zhototransjou",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_544FE317E38622D6C0063A43BF4B1687A2E404C0_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "HOTO Transfer Journal",
+        "subtitle": "ZSTHOTO"
+      }
+    }
+  ]
+}

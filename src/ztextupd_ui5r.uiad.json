@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Texturization excel Uploader"
+  },
+  "ui5AppDetails": {
+    "appId": "texturizationuploader.ztextupd"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_5E53D999BDAC4E2E901B8D7C89314E20DA4E50C4_TM",
+    "semanticObject": "ztextupd",
+    "action": "DISPLAY",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_5E53D999BDAC4E2E901B8D7C89314E20DA4E50C4_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Texturization excel Uploader"
+      }
+    }
+  ]
+}

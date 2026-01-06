@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Texturization Staging"
+  },
+  "ui5AppDetails": {
+    "appId": "ztexturizationstaging"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_CCB2D16F62CA71C10D30BFE2657BBBA95BB9A739_TM",
+    "semanticObject": "z_texturization_staging",
+    "action": "DISPLAY",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_CCB2D16F62CA71C10D30BFE2657BBBA95BB9A739_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Texturization Staging",
+        "subtitle": "ZSTTexture"
+      }
+    }
+  ]
+}

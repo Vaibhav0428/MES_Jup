@@ -1,0 +1,61 @@
+managed implementation in class ZBP_R_TEXTURIZATION unique;
+strict ( 2 );
+
+define behavior for ZR_TEXTURIZATION alias ZrTexturization
+persistent table ZTEXTURIZATION
+etag master LastChangedAt
+lock master
+authorization master( global )
+{
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   Productionorder,
+   Orderdate,
+   Shift,
+   Type,
+   Transid,
+   Sno;
+
+
+  create;
+  update;
+  delete;
+
+  static action deletebyTransId parameter ZI_DELETEPARAM result [1] $self;
+
+  mapping for ZTEXTURIZATION
+  {
+    Productionorder = productionorder;
+    Orderdate = orderdate;
+    Shift = shift;
+    Transid = transid;
+    Type = type;
+    Sno = sno;
+    Toolid = toolid;
+    Material = material;
+    Materialdescription = materialdescription;
+    UOM = uom;
+    Quantity = quantity;
+    Refdocno = refdocno;
+    Batch = batch;
+    Storagelocation = storagelocation;
+    Tolocation = tolocation;
+    Errorlog = errorlog;
+    Posted = posted;
+    Sendtomes = sendtomes;
+    Document = document;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+
+}

@@ -1,0 +1,246 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Material'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Material'
+@UI.headerInfo: {
+typeName: 'Count',
+typeNamePlural: 'Count'
+}
+annotate view ZC_TRANSFERJOURNAL with
+{
+//  @EndUserText.label: 'MaterialID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+
+  
+  @EndUserText.label: 'Header ID'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Header ID'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Header ID'
+  },{ 
+      position: 10 , 
+      label: 'Clear Log',
+      type: #FOR_ACTION,
+      requiresContext: false,   
+      dataAction: 'ClearErrorlog',
+      invocationGrouping: #CHANGE_SET,
+      importance: #HIGH
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  HeaderID;
+  
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  @UI.lineItem: [ {
+    position: 30 
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Material;
+  
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  @UI.lineItem: [ {
+    position: 40 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 40 
+//  } ]
+  Plant;
+  
+  @EndUserText.label: 'Sno'
+  @UI.identification: [ {
+    position: 41 
+  } ]
+  @UI.lineItem: [ {
+    position: 41 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 40 
+//  } ]
+  Sno;
+  
+  @EndUserText.label: 'FromLocation'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'FromLocation'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'FromLocation'
+  } ]
+//  @UI.selectionField: [ {
+//    position: 50 
+//  } ]
+  FromLocation;
+  
+  @EndUserText.label: 'ToLocation'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'ToLocation'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'ToLocation'
+  } ]
+//  @UI.selectionField: [ {
+//    position: 60 
+//  } ]
+  ToLocation;
+  
+  @EndUserText.label: 'FromBatch'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'FromBatch'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'FromBatch'
+  } ]
+//  @UI.selectionField: [ {
+//    position: 70 
+//  } ]
+  FromBatch;
+  
+  @EndUserText.label: 'ToBatch'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'ToBatch'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'ToBatch'
+  } ]
+//  @UI.selectionField: [ {
+//    position: 80 
+//  } ]
+  ToBatch;
+  
+  @EndUserText.label: 'Quantity'
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'Quantity'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'Quantity'
+  } ]
+//  @UI.selectionField: [ {
+//    position: 90 
+//  } ]
+  Quantity;
+  
+  @EndUserText.label: 'EntryUnit'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'EntryUnit'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'EntryUnit'
+  } ]
+//  @UI.selectionField: [ {
+//    position: 100 
+//  } ]
+  EntryUnit;
+  
+  @EndUserText.label: 'Errorlog'
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'Errorlog'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'Errorlog'
+  } ]
+//  @UI.selectionField: [ {
+//    position: 110 
+//  } ]
+  Errorlog;
+  
+  @EndUserText.label: 'Posted'
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'Posted'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'Posted'
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  Posted;
+   @EndUserText.label: 'Send To MES'
+  @UI.identification: [ {
+    position: 121 , 
+    label: 'Send To MES'
+  } ]
+  @UI.lineItem: [ {
+    position: 121 , 
+    label: 'Send To MES'
+  } ]
+  SendToMES;
+  
+  @EndUserText.label: 'DocumentNumber'
+  @UI.identification: [ {
+    position: 130 , 
+    label: 'DocumentNumber'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 , 
+    label: 'DocumentNumber'
+  } ]
+//  @UI.selectionField: [ {
+//    position: 130 
+//  } ]
+  DocumentNumber;
+  
+  @UI.identification: [ {
+    position: 140 
+  } ]
+  @UI.lineItem: [ {
+    position: 140 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 140 
+//  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 150 
+  } ]
+  @UI.lineItem: [ {
+    position: 150 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 150 
+//  } ]
+  CreatedAt;
+  
+  
+  @UI.hidden: true
+  LastChangedBy;
+  
+  @UI.hidden: true
+  LastChangedAt;
+  
+  
+  @UI.hidden: true
+  LocalLastChangedAt;
+  }
